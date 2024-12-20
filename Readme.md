@@ -1,4 +1,4 @@
-# Neos9 Upgrade Tool
+# Neos 9 Upgrade Tool
 This package provides some tooling for a better upgrade path from Neos 8.3 to Neos 9.0.
 
 ## Install
