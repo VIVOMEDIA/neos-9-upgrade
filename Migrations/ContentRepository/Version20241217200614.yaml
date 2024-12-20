@@ -1,0 +1,13 @@
+up:
+  comments: 'Detach variants with different parent'
+  migration:
+    - filters:
+        - type: 'NodeType'
+          settings:
+            nodeType: 'Neos.Neos:Node'
+            withSubTypes: TRUE
+      transformations:
+        - type: 'VIVOMEDIA\Neos9\Upgrade\Transformations\DetachVariantsWithDifferentParentTransformation'
+          settings: [ ]
+down:
+  warnings: 'No down migration available'
