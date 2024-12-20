@@ -2,6 +2,7 @@
     "description": "VIVOMEDIA.Neos9.Upgrade",
     "type": "neos-package",
     "name": "vivomedia/neos-9-upgrade",
+    "license": "MIT",
     "require": {
         "neos/neos": "^8.3"
     },
