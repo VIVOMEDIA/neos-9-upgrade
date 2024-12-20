@@ -3,7 +3,7 @@ This package provides some tooling for a better upgrade path from Neos 8.3 to Ne
 
 ## Install
 ```bash
-composer require --dev vivomedia/neos9-upgrade
+composer require --dev vivomedia/neos-9-upgrade
 ```
 
 
