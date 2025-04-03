@@ -40,6 +40,20 @@ migration.
 ./flow node:migrate 20241217200614
 ```
 
+### Detach variants if Node Type is different in other dimensions
+In Neos 9 it is currently not possible for Nodes with the same identifier to have different Node Types in different dimensions. 
+
+As a workaround you can detach the variants in the other dimensions and create dedicated nodes. 
+
+(!) If you need the connection between the nodes for automated translations, this will not work anymore after the migration.
+
+(!) If this hits documents nodes, the removed connection will break any language switcher, which depends on this information to switch between languages and stay on the same document. 
+
+#### Run the migration
+```bash
+./flow node:migrate 20250403150125
+```
+
 Thanks to [pkallert](https://github.com/pKallert) for providing this migration
 
 
