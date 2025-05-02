@@ -33,7 +33,9 @@ Node D (DE)       Node E (EN)
 (!) If you need the connection between the nodes for automated translations, this will not work anymore after the
 migration.
 
-(!) If this hits documents nodes, the removed connection will break any language switcher, which depends on this information to switch between languages and stay on the same document. 
+(!) If this hits documents nodes, the removed connection will break any language switcher, which depends on this information to switch between languages and stay on the same document.
+
+(!) If you use fallback dimensions, this might lead to duplicated content, as the fallback might shine through.
 
 #### Run the migration
 ```bash
@@ -48,6 +50,8 @@ As a workaround you can detach the variants in the other dimensions and create d
 (!) If you need the connection between the nodes for automated translations, this will not work anymore after the migration.
 
 (!) If this hits documents nodes, the removed connection will break any language switcher, which depends on this information to switch between languages and stay on the same document. 
+
+(!) If you use fallback dimensions, this might lead to duplicated content, as the fallback might shine through.
 
 #### Run the migration
 ```bash

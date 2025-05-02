@@ -5,6 +5,7 @@ namespace VIVOMEDIA\Neos9\Upgrade\Transformations;
 use Doctrine\ORM\EntityManagerInterface;
 use Neos\ContentRepository\Domain\Model\NodeData;
 use Neos\ContentRepository\Domain\Repository\NodeDataRepository;
+use Neos\ContentRepository\Domain\Utility\NodePaths;
 use Neos\ContentRepository\Migration\Transformations\AbstractTransformation;
 use Neos\Flow\Utility\Algorithms;
 use Neos\Flow\Annotations as Flow;
@@ -59,5 +60,8 @@ class DetachVariantsWithDifferentNodeTypesTransformation extends AbstractTransfo
     {
         $identifier = Algorithms::generateUUID();
         $node->setIdentifier($identifier);
+
+        $newNodePath = $node->getParentPath() . '/' . NodePaths::generateRandomNodeName();
+        $node->setPath($newNodePath);
     }
 }
